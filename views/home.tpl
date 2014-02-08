@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link href='http://fonts.googleapis.com/css?family=Duru+Sans' rel='stylesheet' type='text/css'>
 <meta charset=utf-8>
 <meta name="viewport" content="width=620">
 <title>Send your local geodata files to geo.admin.ch</title>
 <style>
-@import url(http://fonts.googleapis.com/css?family=Hammersmith+One);
 article { width: 600px; margin: 0 auto }
 h1 { text-align: center; } 
-p { text-align: center; } 
+a {text-decoration:none} 
+p { text-align: center; margin-bottom: 5px;} 
 #holder { border: 10px dashed #ccc; width: 300px; min-height: 300px; margin: 20px auto;}
 #holder.hover { border: 10px dashed #0c0; }
 #holder img { display: block; margin: 10px auto; }
@@ -16,7 +17,7 @@ p { text-align: center; }
 progress { width: 100%; }
 .fail { background: #c00; color: #fff; }
 .hidden { display: none !important;}
-body { font-family:  'Hammersmith One', sans-serif; } 
+body { font-family: 'Duru Sans', sans-serif; } 
 </style>
 <body>
 		
@@ -26,14 +27,14 @@ body { font-family:  'Hammersmith One', sans-serif; }
 		<!-- 						0; right: 0; border: 0;" -->
 		<!-- 		 src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" -->
 		<!-- 		 alt="Fork me on GitHub"></a> -->
-      <h1>Send your local geodata files to <a href="http://map.geo.admin.ch">geo.admin.ch</a></h1>
+      <h1>Send your geodata to <a href="http://map.geo.admin.ch">geo.admin.ch</a></h1>
 			<p class="fail">{{ error_message }}</p>
 			<p id="description">Drag a file from your desktop on to the
 			drop zone below. You'll be redirected
 			to <a href="http://map.geo.admin.ch">map.geo.admin.ch</a> and
-			your data should show up there.</p>
-			<p id="description">This is a proof-of-concept. Currently, only
-			KMZ and GeoJSON files are supported</p>.
+			your data should show up there.</br>
+			This is a proof-of-concept. Currently, only
+			KMZ and GeoJSON files are supported.</p>.
   <div id="holder">
   </div> 
   <p id="upload" class="hidden"><label>Drag & drop not supported, but you can still upload via this input field:<br><input type="file"
