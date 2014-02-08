@@ -26,11 +26,14 @@ body { font-family:  'Hammersmith One', sans-serif; }
 		<!-- 						0; right: 0; border: 0;" -->
 		<!-- 		 src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" -->
 		<!-- 		 alt="Fork me on GitHub"></a> -->
-      <h1>Send your local geodata files to geo.admin.ch</h1>
+      <h1>Send your local geodata files to <a href="http://map.geo.admin.ch">geo.admin.ch</a></h1>
 			<p class="fail">{{ error_message }}</p>
-			<p id="description">Drag a KMZ file from your desktop on to the
-			drop zone below. You'll be redirected to geo.admin.ch and your
-			data should show up.</p>
+			<p id="description">Drag a file from your desktop on to the
+			drop zone below. You'll be redirected
+			to <a href="http://map.geo.admin.ch">map.geo.admin.ch</a> and
+			your data should show up there.</p>
+			<p id="description">This is a proof-of-concept. Currently, only
+			KMZ and GeoJSON files are supported</p>.
   <div id="holder">
   </div> 
   <p id="upload" class="hidden"><label>Drag & drop not supported, but you can still upload via this input field:<br><input type="file"
@@ -40,8 +43,11 @@ body { font-family:  'Hammersmith One', sans-serif; }
 	<p id="progress">XHR2's upload progress isn't supported</p>
   <p id="progresstext">Upload progress: <progress id="uploadprogress"
   min="0" max="100" value="0">0</progress></p>
-	<p>This service is provided as is. Feedback
-	to <a href="http://twitter.com">@ping13</a> on Twitter. <p>
+	<p>This service is provided as is. Your files are stored temporarily
+	on an Azure server with a random URL, so that it can be piped to the
+	<a href="http://map.geo.admin.ch">map.geo.admin.ch</a>. Feedback on
+	Github or to <a href="http://twitter.com/ping13">@ping13</a> on
+	Twitter.<p>
 	<p><a href="http://geo.ebp.ch"><img src="/static/EBPAG.jpg"></a><p>
 </article>
 <script>
