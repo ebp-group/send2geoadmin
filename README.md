@@ -10,7 +10,7 @@ geodata files and shows it in
 from complete and should only make one point: You don't need a desktop
 GIS to view your geodata on your harddrive (SSD).
 
-The implementation is based on [Azure][]. 
+The implementation takes advantage of [Azure's cloud services][Azure]. 
 
 ## Demo
 
