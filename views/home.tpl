@@ -22,11 +22,10 @@ body { font-family: 'Duru Sans', sans-serif; }
 <body>
 		
 <article>
-	<a href="https://github.com/ernstbaslerpartner/send2geoadmin"> --
-		<img style="position: absolute; top: --
-								0; right: 0; border: 0;" --
-				 src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" --
-				 alt="Fork me on GitHub"></a> --
+	<a href="https://github.com/ernstbaslerpartner/send2geoadmin"> 
+		<img style="position: absolute; top: 0; right: 0; border: 0;"
+				 src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" 
+				 alt="Fork me on GitHub"></a>  
       <h1>Send your geodata to <a href="http://map.geo.admin.ch">geo.admin.ch</a></h1>
 			<p class="fail">{{ error_message }}</p>
 			<p id="description">Drag a file from your desktop on to the
