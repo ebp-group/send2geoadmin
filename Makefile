@@ -1,5 +1,5 @@
 .PHONY:
-	local
+	local help creatwebjob cleanup deploy restart
 
 ACCESS_KEY=`cat blobstorage_access_key.txt`
 
@@ -18,6 +18,6 @@ local:
 deploy:
 	git push azure master
 
-make restart:
+restart:
 	azure site restart send2geoadmin
 

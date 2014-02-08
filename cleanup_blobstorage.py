@@ -34,7 +34,7 @@ if __name__ == "__main__":
         # example value for blob.properties.last_modified:
         # "Sat, 08 Feb 2014 10:39:50 GMT"
         blob_dt = datetime.strptime(blob.properties.last_modified, 
-                                    '%a, %d %b %Y %I:%M:%S %Z')
+                                    '%a, %d %b %Y %H:%M:%S %Z')
         if (now_dt - blob_dt) > timedelta (days = 1):
             try:
                 blob_service.delete_blob(config['container'], blob.name)
