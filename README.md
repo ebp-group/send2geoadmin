@@ -10,7 +10,12 @@ geodata files and shows it in
 from complete and should only make one point: You don't need a desktop
 GIS to view your geodata on your harddrive (SSD).
 
-The implementation is based on [Azure][].
+The implementation is based on [Azure][]. 
+
+## Demo
+
+A running version is live at
+<http://send2geoadmin.azurewebsites.net>. Please use responsibly.
 
 ## Supported file formats
 
