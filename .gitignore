@@ -1,0 +1,6 @@
+*.pyc
+azure
+blobstorage_access_key.txt
+*.zip
+
+
