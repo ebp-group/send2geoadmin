@@ -35,7 +35,7 @@ Steps to run this app locally:
    your blob storage container. 
 3. Run `make local` or explicitly:
 
-      export APPSETTING_storage_access_key=`cat blobstorage_access_key.txt`; export PYTHONPATH=env/Scripts/; python myapp.py
+        export APPSETTING_storage_access_key=`cat blobstorage_access_key.txt`; export PYTHONPATH=env/Scripts/; python myapp.py
 
 ### On Azure 
 This application is running on an Azure website. Here are some rough
