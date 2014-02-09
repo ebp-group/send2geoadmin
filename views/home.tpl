@@ -48,7 +48,7 @@ body { font-family: 'Duru Sans', sans-serif; }
 	<a href="http://map.geo.admin.ch">map.geo.admin.ch</a>. Feedback on
 	Github or to <a href="http://twitter.com/ping13">@ping13</a> on
 	Twitter.<p>
-	<p><a href="http://geo.ebp.ch"><img src="/static/EBPAG.jpg"></a><p>
+	<p><a href="http://geo.ebp.ch"><img src="/static/geo_ebp_blog_logo.png"></a><p>
 </article>
 <script>
 var holder = document.getElementById('holder'),
