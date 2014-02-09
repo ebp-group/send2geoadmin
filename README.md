@@ -8,7 +8,7 @@ This is a proof-of-concept web application which takes your local
 geodata files and shows it in
 [the geoportal of the Swiss federal government][geoadmin]. It is far
 from complete and should only make one point: You don't need a desktop
-GIS to view your geodata on your harddrive (SSD).
+GIS to view your geodata on your harddrive/SSD.
 
 The implementation takes advantage of [Azure's cloud services][Azure]. 
 
@@ -26,6 +26,18 @@ Currently:
 
 ## Installation and Deployment
 
+### On your machine
+
+Steps to run this app locally:
+
+1. Create or re-use one of your blob storage container on [Azure][]
+2. Create a file `blobstorage_access_key.txt` with the access key for
+   your blob storage container. 
+3. Run `make local` or explicitly:
+
+	export APPSETTING_storage_access_key=`cat blobstorage_access_key.txt`; export PYTHONPATH=env/Scripts/; python myapp.py
+
+### On Azure 
 This application is running on an Azure website. Here are some rough
 steps to recreate it on your own:
 
@@ -51,9 +63,11 @@ steps to recreate it on your own:
 
 ## Credits
 
-The drag'n'drop code is adapted from
-<http://html5demos.com/dnd-upload>. The conversion to KML is done on a
-separate Node.JS instance using <https://github.com/mapbox/tokml>.
+* The drag'n'drop code is adapted from @remy's
+  <http://html5demos.com/dnd-upload>. a
+* The conversion to KML is done on a separate Node.JS instance using
+  <https://github.com/mapbox/tokml>.
+* The Python web framework [Bottle][].
 
 ## Author
 
@@ -63,3 +77,4 @@ Stephan Heuel, stephan.heuel@ebp.ch
 [Azure]: http://windowsazure.com
 [geoadmin]: http://map.geo.admin.ch
 [azure-connection-strings]: http://blogs.msdn.com/b/windowsazure/archive/2013/07/17/windows-azure-web-sites-how-application-strings-and-connection-strings-work.aspx
+[Bottle]: http://bottlepy.org/
